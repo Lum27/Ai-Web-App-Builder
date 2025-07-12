@@ -52,7 +52,7 @@ CONTACT: [Contact info or call-to-action]
 
     # Inject AI-generated values into the template
     site_output = template \
-        .replace("{{CONTENT}}", data["MAIN_TITLE"]) \
+        .replace("{{MAIN_TITLE}}", data["MAIN_TITLE"]) \
         .replace("{{ABOUT}}", data["ABOUT"]) \
         .replace("{{SERVICES}}", data["SERVICES"]) \
         .replace("{{CONTACT}}", data["CONTACT"])

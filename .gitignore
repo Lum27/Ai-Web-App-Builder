@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+.env
+
+# Node.js / Next.js
+node_modules/
+.next/
+.env.local
+.env.production.local
+npm-debug.log*
+yarn-error.log*
+
+# General
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

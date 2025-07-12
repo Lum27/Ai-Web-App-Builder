@@ -1,8 +1,20 @@
-export default function Frozen() {
+import { useState } from "react";
+
+export default function FrozenControl() {
+  const [isFrozen, setIsFrozen] = useState(false);
+
+  const toggleFreeze = () => {
+    // This is UI logic; actual backend logic can be added later
+    setIsFrozen((prev) => !prev);
+  };
+
   return (
-    <div style={{ padding: "2rem", fontFamily: "sans-serif", color: "red" }}>
-      <h1>🚫 Account Frozen</h1>
-      <p>Your subscription payment failed. Please update your billing info to reactivate your website or app.</p>
+    <div>
+      <h1>Freeze/Unfreeze Site</h1>
+      <p>Status: {isFrozen ? "❄️ Frozen" : "🔥 Active"}</p>
+      <button onClick={toggleFreeze}>
+        {isFrozen ? "Unfreeze Site" : "Freeze Site"}
+      </button>
     </div>
   );
 }

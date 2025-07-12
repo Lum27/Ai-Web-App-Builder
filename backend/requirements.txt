@@ -1,3 +1,4 @@
 flask
 openai
 stripe
+python-dotenv
